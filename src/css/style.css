@@ -1,13 +1,17 @@
 /* General */
+/* Navbar */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #004A80;
 }
 
-/* Navbar */
 header nav {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
 }
 
 header nav .logo {
@@ -24,24 +28,39 @@ header nav .header-icon.first {
     margin-right: 25px;
 }
 
-/* Header title and paragraph */
-header .top-text {
+/* Top section */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004A80;
+    color: #ffffff;
+}
+
+/* Top section title and paragraph */
+.top-section .top-text {
     text-align: center;
     letter-spacing: 0;
 }
 
-/* Header input and button */
-header .form {
-    display: flex;
+.top-section .top-text span {
+    font-weight: bold;
 }
 
-header .form input {
+/* Top section input and button */
+.top-section .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-section .form input {
     border: none;
     border-radius: 3px;
     text-indent: 12px
 }
 
-header .form input[type=text]::placeholder {
+.top-section .form input[type=text]::placeholder {
     font-weight: bold;
     font-size: 16px;
     color: #9B9B9B;
@@ -50,12 +69,12 @@ header .form input[type=text]::placeholder {
     text-transform: uppercase;
 }
 
-header .form input[type=text] {
+.top-section .form input[type=text] {
     box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
     padding: 0px;
 }
 
-header .form input[type=button] {
+.top-section .form input[type=button] {
     /* font style */
     font-weight: bold;
     color: #004A80;
@@ -67,19 +86,19 @@ header .form input[type=button] {
 }
 
 /* Bottom paragraph */
-header .bottom-text {
+.top-section .bottom-text {
     width: 100%;
     display: flex;
     margin-top: 20px;
     text-align: left;
 }
 
-header .bottom-text .icon {
+.top-section .bottom-text .icon {
     width: 15px;
     height: 19px;
 }
 
-header .bottom-text p {
+.top-section .bottom-text p {
     font-size: 16px;
     color: #F6BC25;
     letter-spacing: 0;
@@ -89,39 +108,36 @@ header .bottom-text p {
 /* Mobile */
 @media (min-width: 320px) and (max-width: 767px) {
     header {
-        padding: 20px 15px 40px 15px;
+        padding: 20px 15px 0px 15px;
     }
 
-    /* Header title and paragraph */
-    header .top-text {
-        margin-top: 30px;
+    /* Top section title and paragraph */
+    .top-section {
+        padding: 30px 25px 40px 25px;
     }
-
-    header .top-text h1 {
+    
+    .top-section .top-text h1 {
         font-size: 38px;
     }
 
-    header .top-text p {
+    .top-section .top-text p {
         margin-top: 10px;
         line-height: 23px;
     }
 
-    header .top-text span {
-        font-weight: bold;
-    }
-
-    /* Header input and button */
-    header .form {
+    /* Top section input and button */
+    .top-section .form {
         margin-top: 20px;
         flex-direction: column;
+        align-items: center;
     }
 
-    header .form input {
+    .top-section .form input {
         width: 280px;
         height: 50px;
     }
 
-    header .form input[type=button] {
+    .top-section .form input[type=button] {
         margin-top: 10px;
         /* font style */
         font-family: lato;
@@ -130,59 +146,98 @@ header .bottom-text p {
     }
 
     /* Bottom paragraph */
-    header .bottom-text .icon {
+    .top-section .bottom-text .icon {
         margin-right: 10px;
+    }
+}
+
+/* Tablet & Desktop Shared */
+@media (min-width: 768px) {
+
+    /* Top section title and paragraph */
+    .top-section .top-text p {
+        margin-top: 15px;
+    }
+
+    /* Top section input and button */
+    .top-section .form input {
+        height: 70px;
+    }
+
+    .top-section .form input[type=text] {
+        margin-right: 20px;
+    }
+
+    .top-section .form input[type=button] {
+        width: 180px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    /* Bottom paragraph */
+    .top-section .bottom-text .icon {
+        margin-right: 15px;
     }
 }
 
 /* Table */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        padding: 20px 15px 60px 15px;
+        padding: 20px 15px 0px 15px;
     }
 
-    /* Header title and paragraph */
-    header .top-text {
-        margin-top: 50px;
+    /* Top section title and paragraph */
+    .top-section {
+        padding: 50px 25px 60px 25px;
     }
 
-    header .top-text h1 {
+    .top-section .top-text h1 {
         font-size: 48px;
     }
 
-    header .top-text p {
-        margin-top: 15px;
+    .top-section .top-text p {
         line-height: 25px;
         font-size: 20px;
     }
 
-    header .top-text span {
-        font-weight: bold;
-    }
-
-    header .form {
+    /* Top section input and button */
+    .top-section .form {
         margin-top: 28px;
         flex-direction: row;
     }
 
-    header .form input {
-        height: 70px;
-    }
-
-    header .form input[type=text] {
-        margin-right: 20px;
+    .top-section .form input[type=text] {
         width: 518px;
     }
+}
 
-    header .form input[type=button] {
-        width: 180px;
-        /* font style */
-        font-size: 24px;
-        letter-spacing: 1px;
+/* Desktop */
+@media (min-width: 1025px) {
+    header {
+        padding: 20px 230px 0px 230px;
     }
 
-    /* Bottom paragraph */
-    header .bottom-text .icon {
-        margin-right: 15px;
+    /* Top section title and paragraph */
+    .top-section {
+        padding: 50px 230px 95px 230px;
+    }
+
+    .top-section .top-text h1 {
+        font-size: 52px;
+    }
+
+    .top-section .top-text p {
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    /* Top section input and button */
+    .top-section .form {
+        margin-top: 29px;
+        flex-direction: row;
+    }
+
+    .top-section .form input[type=text] {
+        width: 780px;
     }
 }

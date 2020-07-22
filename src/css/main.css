@@ -30,17 +30,3 @@ h1 {
 span {
     color: #F6BC25;
 }
-
-header {
-    background-color: #004A80;
-    color: #ffffff;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul {
-    display: flex;
-}
