@@ -58,15 +58,19 @@ header nav .header-icon.first {
 .top-section .form-section input {
     border: none;
     border-radius: 3px;
-    text-indent: 12px
+    text-indent: 12px;
 }
 
+.top-section .form-section input,
 .top-section .form-section input[type=text]::placeholder {
     font-weight: bold;
     font-size: 16px;
     color: #9B9B9B;
-    letter-spacing: 2px;
     line-height: 18px;
+}
+
+.top-section .form-section input[type=text]::placeholder {
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
