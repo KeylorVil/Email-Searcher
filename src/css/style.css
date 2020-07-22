@@ -1,0 +1,111 @@
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 20px 15px 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Navbar */
+    header nav {
+        width: 100%;
+    }
+
+    header nav .logo {
+        width: 173px;
+        height: 25px;
+    }
+
+    header nav .header-icon {
+        width: 23px;
+        height: 23px;
+    }
+
+    header nav .header-icon.first {
+        margin-right: 25px;
+    }
+    /* End of navbar */
+    /* Header title and paragraph */
+    header .top-text {
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 0;
+    }
+
+    header .top-text h1 {
+        font-size: 38px;
+    }
+
+    header .top-text p {
+        margin-top: 10px;
+        line-height: 23px;
+    }
+
+    header .top-text span {
+        font-weight: bold;
+    }
+    /* End of header title and paragraph */
+    /* Header input and button */
+    header .form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .form input {
+        width: 280px;
+        height: 50px;
+        border: none;
+        border-radius: 3px;
+        text-indent: 12px
+    }
+
+    header .form input[type=text] {
+        box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
+        padding: 0px;
+    }
+
+    header .form input[type=text]::placeholder {
+        font-weight: bold;
+        font-size: 16px;
+        color: #9B9B9B;
+        letter-spacing: 2px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+    header .form input[type=button] {
+        margin-top: 10px;
+        /* font style */
+        font-family: lato;
+        font-size: 22px;
+        color: #004A80;
+        letter-spacing: 0.93px;
+        text-transform: uppercase;
+        /* input style */
+        background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
+        box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+        border-radius: 6px;
+    }
+    /* End of header input and button */
+    /* Bottom paragraph */
+    header .bottom-text {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    header .bottom-text .icon {
+        width: 15px;
+        height: 19px;
+        margin-right: 10px;
+    }
+
+    header .bottom-text p {
+        font-size: 16px;
+        color: #F6BC25;
+        letter-spacing: 0;
+        font-weight: bold;
+    }
+    /* End of Bottom paragraph */
+}

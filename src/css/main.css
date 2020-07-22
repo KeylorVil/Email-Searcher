@@ -1,0 +1,46 @@
+@font-face {
+    font-family: helveticaneue;
+    src: url(/src/fonts/helveticaneue/helveticaneu-regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: helveticaneue;
+    src: url(/src/fonts/helveticaneue/helveticaneu-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(/src/fonts/lato/lato-bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font-family: helveticaneue;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: helveticaneue;
+    font-weight: bold;
+}
+
+span {
+    color: #F6BC25;
+}
+
+header {
+    background-color: #004A80;
+    color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+}
