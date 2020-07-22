@@ -48,19 +48,20 @@ header nav .header-icon.first {
 }
 
 /* Top section input and button */
-.top-section .form {
+
+.top-section .form-section form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.top-section .form input {
+.top-section .form-section input {
     border: none;
     border-radius: 3px;
     text-indent: 12px
 }
 
-.top-section .form input[type=text]::placeholder {
+.top-section .form-section input[type=text]::placeholder {
     font-weight: bold;
     font-size: 16px;
     color: #9B9B9B;
@@ -69,12 +70,12 @@ header nav .header-icon.first {
     text-transform: uppercase;
 }
 
-.top-section .form input[type=text] {
+.top-section .form-section input[type=text] {
     box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
     padding: 0px;
 }
 
-.top-section .form input[type=button] {
+.top-section .form-section input[type=button] {
     /* font style */
     font-weight: bold;
     color: #004A80;
@@ -113,9 +114,9 @@ header nav .header-icon.first {
 
     /* Top section title and paragraph */
     .top-section {
-        padding: 30px 25px 40px 25px;
+        padding: 30px 15px 40px 25px;
     }
-    
+
     .top-section .top-text h1 {
         font-size: 38px;
     }
@@ -126,18 +127,18 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .top-section .form {
+    .top-section .form-section form {
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
 
-    .top-section .form input {
-        width: 280px;
+    .top-section .form-section input {
+        width: 100%;
         height: 50px;
     }
 
-    .top-section .form input[type=button] {
+    .top-section .form-section input[type=button] {
         margin-top: 10px;
         /* font style */
         font-family: lato;
@@ -160,15 +161,15 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .top-section .form input {
+    .top-section .form-section input {
         height: 70px;
     }
 
-    .top-section .form input[type=text] {
+    .top-section .form-section input[type=text] {
         margin-right: 20px;
     }
 
-    .top-section .form input[type=button] {
+    .top-section .form-section input[type=button] {
         width: 180px;
         font-size: 24px;
         letter-spacing: 1px;
@@ -201,12 +202,12 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .top-section .form {
+    .top-section .form-section form {
         margin-top: 28px;
         flex-direction: row;
     }
 
-    .top-section .form input[type=text] {
+    .top-section .form-section input[type=text] {
         width: 518px;
     }
 }
@@ -232,12 +233,12 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .top-section .form {
+    .top-section .form-section form {
         margin-top: 29px;
         flex-direction: row;
     }
 
-    .top-section .form input[type=text] {
+    .top-section .form-section input[type=text] {
         width: 780px;
     }
 }
