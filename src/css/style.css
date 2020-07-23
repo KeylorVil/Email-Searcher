@@ -110,6 +110,58 @@ header nav .header-icon.first {
     font-weight: bold;
 }
 
+/* main content */
+.main {
+    background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+}
+
+.main h1 {
+    color: #004A80;
+    text-align: center;
+}
+
+.main>p {
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.main .cards {
+    display: flex;
+}
+
+.main .cards .col .card {
+    display: flex;
+}
+
+.main .cards .col .card.first-card {
+    margin-top: 0px;
+}
+
+.main .cards .col .card .number {
+    background-color: #004A80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main .cards .col .card .number span {
+    font-weight: bold;
+}
+
+.main .cards .col .card .right-text h2 {
+    font-weight: bold;
+    color: #004A80;
+    letter-spacing: 0;
+}
+
+.main .cards .col .card .right-text p {
+    color: #000000;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
 /* Mobile */
 @media (min-width: 320px) and (max-width: 767px) {
     header {
@@ -154,6 +206,60 @@ header nav .header-icon.first {
     .top-section .bottom-text .icon {
         margin-right: 10px;
     }
+
+    /* main content */
+    .main {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .main h1 {
+        font-size: 38px;
+    }
+
+    .main>p {
+        margin-top: 15px;
+    }
+
+    .main .cards {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main .cards .col .card {
+        margin-top: 15px;
+    }
+
+    .main .cards .col .card .number {
+        width: 50.4px;
+        height: 50.4px;
+        min-width: 50.4px;
+        margin-right: 10.6px;
+    }
+
+    .main .cards .col .card .number span {
+        font-size: 26.88px;
+    }
+
+    .main .cards .col .card .right-text h2 {
+        font-size: 20px;
+    }
+
+    .main .cards .col .card .right-text p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* Main content */
+    .main .cards {
+        flex-direction: row;
+    }
+
+    .main .cards .col .card.fourth-card {
+        margin-top: 0px;
+    }
 }
 
 /* Tablet & Desktop Shared */
@@ -183,9 +289,29 @@ header nav .header-icon.first {
     .top-section .bottom-text .icon {
         margin-right: 15px;
     }
+
+    /* Main content */
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main .cards .col .card.fourth-card {
+        margin-top: 0px;
+    }
+
+    .main .cards .col .card .number {
+        margin-right: 20px;
+    }
 }
 
-/* Table */
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 20px 15px 0px 15px;
@@ -213,6 +339,52 @@ header nav .header-icon.first {
 
     .top-section .form-section input[type=text] {
         width: 518px;
+    }
+
+    /* main content */
+    .main {
+        padding: 30px 25px 30px 25px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+    }
+
+    .main>p {
+        margin-top: 20px;
+        font-size: 20px;
+        max-width: 718px;
+    }
+
+    .main .cards {
+        margin-top: 30px;
+    }
+
+    .main .cards .col.first-col {
+        margin-right: 24px;
+    }
+
+    .main .cards .col .card {
+        margin-top: 20px;
+    }
+
+    .main .cards .col .card .number {
+        width: 63px;
+        height: 63px;
+        min-width: 63px;
+    }
+
+    .main .cards .col .card .number span {
+        font-size: 33.6px;
+    }
+
+    .main .cards .col .card .right-text h2 {
+        font-size: 20px;
+    }
+
+    .main .cards .col .card .right-text p {
+        max-width: 264px;
+        font-size: 16px;
     }
 }
 
@@ -244,5 +416,51 @@ header nav .header-icon.first {
 
     .top-section .form-section input[type=text] {
         width: 780px;
+    }
+
+    /* main content */
+    .main {
+        padding: 30px 25px 30px 25px;
+    }
+
+    .main h1 {
+        font-size: 52px;
+    }
+
+    .main>p {
+        margin-top: 20px;
+        font-size: 22px;
+        max-width: 980px;
+    }
+
+    .main .cards {
+        margin-top: 40px;
+    }
+
+    .main .cards .col.first-col {
+        margin-right: 60px;
+    }
+
+    .main .cards .col .card {
+        margin-top: 30px;
+    }
+
+    .main .cards .col .card .number {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+    }
+
+    .main .cards .col .card .number span {
+        font-size: 48px;
+    }
+
+    .main .cards .col .card .right-text h2 {
+        font-size: 22px;
+    }
+
+    .main .cards .col .card .right-text p {
+        max-width: 380px;
+        font-size: 18px;
     }
 }
