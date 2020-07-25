@@ -2,18 +2,21 @@
     font-family: helveticaneue;
     src: url(/src/fonts/helveticaneue/helveticaneu-regular.ttf);
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: helveticaneue;
     src: url(/src/fonts/helveticaneue/helveticaneu-bold.ttf);
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: lato;
     src: url(/src/fonts/lato/lato-bold.ttf);
     font-weight: bold;
+    font-display: swap;
 }
 
 body {

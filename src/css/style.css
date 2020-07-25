@@ -43,7 +43,7 @@ header nav .header-icon.first {
     letter-spacing: 0;
 }
 
-.top-section .top-text span {
+.top-section .top-text h1, .top-section .top-text span {
     font-weight: bold;
 }
 

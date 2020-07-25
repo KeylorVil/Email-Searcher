@@ -3,7 +3,15 @@ const domReady = function (callback) {
 };
 
 domReady(function() {
+    // Non-minified paths || switch with below's array
+    // const stylesheets = [
+    //     '/src/css/reset.css',
+    //     '/src/css/main.css',
+    //     '/src/css/style.css',
+    // ];
     const stylesheets = [
+        '/src/css/reset.min.css',
+        '/src/css/main.min.css',
         '/src/css/style.css',
     ];
     const scripts = [
