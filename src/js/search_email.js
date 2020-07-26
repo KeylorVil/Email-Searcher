@@ -5,35 +5,46 @@ socket.on('connect', function () {
     let url_string = window.location.href;
     let url = new URL(url_string);
     let email = url.searchParams.get("search");
-    if (email !== "" || email !== null || email !== undefined) {
+    if (email !== "" && email !== null && email !== undefined) {
         socket.emit('searchEmail', {
             email
         });
+    } else {
+        emailError();
     }
 });
 
+function emailError() {
+    document.querySelector('.main').firstChild.nextElementSibling.textContent = "Oops! Something went wrong...";
+    document.querySelector('.main').firstChild.nextElementSibling.nextElementSibling.textContent = "Lookup for any typo or mistake on the email and try again!";
+}
+
 socket.on('response', function (response) {
     let data = JSON.parse(response)
-    // Create Elements
-    let resultDiv = document.createElement('div');
-    let iconDiv = document.createElement('div');
-    let infoDiv = document.createElement('div');
-    let row = document.createElement('div');
-    // Set Classes
-    resultDiv.classList.add('result');
-    infoDiv.classList.add('info');
-    iconDiv.classList.add('icon');
-    row.classList.add('row');
-    // Call functions
-    createProfileIcon(iconDiv);
-    resultTopInfo(data, infoDiv);
-    firstColInfo(data, row);
-    secondColInfo(data, row);
-    // Append elements
-    infoDiv.appendChild(row);
-    resultDiv.appendChild(iconDiv);
-    resultDiv.appendChild(infoDiv);
-    document.querySelector('.main').appendChild(resultDiv);
+    if (data.length !== 0) {
+        // Create Elements
+        let resultDiv = document.createElement('div');
+        let iconDiv = document.createElement('div');
+        let infoDiv = document.createElement('div');
+        let row = document.createElement('div');
+        // Set Classes
+        resultDiv.classList.add('result');
+        infoDiv.classList.add('info');
+        iconDiv.classList.add('icon');
+        row.classList.add('row');
+        // Call functions
+        createProfileIcon(iconDiv);
+        resultTopInfo(data, infoDiv);
+        firstColInfo(data, row);
+        secondColInfo(data, row);
+        // Append elements
+        infoDiv.appendChild(row);
+        resultDiv.appendChild(iconDiv);
+        resultDiv.appendChild(infoDiv);
+        document.querySelector('.main').appendChild(resultDiv);
+    } else {
+        emailError();
+    }
 });
 
 function createProfileIcon(iconDiv) {
@@ -96,19 +107,19 @@ function secondColInfo(data, row) {
     secondCol.appendChild(phoneNumbers);
     row.appendChild(secondCol);
     // Dynamic Data
-    for(let i in data.phone_numbers) {
+    for (let i in data.phone_numbers) {
         let span = document.createElement('span');
         span.textContent = data.phone_numbers[i];
-        if(parseInt(i) === 0)
+        if (parseInt(i) === 0)
             span.classList.add('first-number');
         secondCol.appendChild(span);
     }
     secondCol.appendChild(relatives);
     // Dynamic Data
-    for(let i in data.relatives) {
+    for (let i in data.relatives) {
         let span = document.createElement('p');
         span.textContent = data.relatives[i];
-        if(parseInt(i) === data.relatives.length-1)
+        if (parseInt(i) === data.relatives.length - 1)
             span.classList.add('last_relative');
         secondCol.appendChild(span);
     }
