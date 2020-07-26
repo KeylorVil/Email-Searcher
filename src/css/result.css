@@ -76,6 +76,10 @@
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
+    .search-section {
+        padding-top: 40px;
+    }
+
     main .result {
         max-width: 290px;
     }
@@ -148,6 +152,10 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .search-section {
+        padding-top: 107px;
+    }
+
     .main .result {
         padding: 30px 30px 25px 30px;
     }
@@ -171,6 +179,10 @@
 
 /* Desktop */
 @media (min-width: 1025px) {
+    .search-section {
+        padding-top: 105px;
+    }
+
     .main .result {
         padding: 40px 60px 40px 40px;
     }
