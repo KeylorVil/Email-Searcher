@@ -41,6 +41,8 @@ socket.on('response', function (response) {
         infoDiv.appendChild(row);
         resultDiv.appendChild(iconDiv);
         resultDiv.appendChild(infoDiv);
+        //display
+        document.querySelector('.main').innerHTML = "";
         document.querySelector('.main').appendChild(resultDiv);
     } else {
         emailError();
