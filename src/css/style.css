@@ -383,6 +383,11 @@ header nav .header-icon.first {
 /* Desktop */
 @media (min-width: 1025px) {
     /* Top section title and paragraph */
+    header {
+        padding-right: 230px;
+        padding-left: 230px;
+    }
+
     .search-section {
         padding: 30px 230px 95px 230px;
     }
