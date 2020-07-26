@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email Searcher</title>
     <link rel="preload" href="/src/fonts/helveticaneue/helveticaneu-regular.ttf">
     <link rel="preload" href="/src/fonts/helveticaneue/helveticaneu-bold.ttf">
     <link rel="preload" href="/src/fonts/lato/lato-bold.ttf">
     <link rel="preload" href="/src/css/reset.min.css">
     <link rel="preload" href="/src/css/main.min.css">
     <link rel="preload" href="/src/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js" defer></script>
     <script src="/src/js/main.js" defer></script>
 </head>
 
@@ -32,8 +33,8 @@
         </div>
         <div class="form-section">
             <form>
-                <input type="text" placeholder="email">
-                <input type="button" value="go!">
+                <input id="emailInput" type="text" placeholder="email">
+                <input id="searchBtn" type="button" value="go!">
             </form>
             <div class="bottom-text">
                 <img class="icon" src="/src/images/icons/icon_lock.png" alt="lock">
