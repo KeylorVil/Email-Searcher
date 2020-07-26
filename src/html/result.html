@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Searcher || Results</title>
+    <link rel="preload" href="/src/fonts/helveticaneue/helveticaneu-regular.ttf">
+    <link rel="preload" href="/src/fonts/helveticaneue/helveticaneu-bold.ttf">
+    <link rel="preload" href="/src/fonts/lato/lato-bold.ttf">
+    <link rel="preload" href="/src/css/reset.min.css">
+    <link rel="preload" href="/src/css/main.min.css">
+    <link rel="preload" href="/src/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js" defer></script>
+    <script src="/src/js/main.js" defer></script>
+    <script src="/src/js/result.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><img class="logo" src="/src/images/icons/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#"><img class="header-icon first" src="/src/images/icons/icon_search.png" alt="search"></a>
+                </li>
+                <li><a href="#"><img class="header-icon" src="/src/images/icons/icon_person.png" alt="person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <h1>Result</h1>
+        <p>Look at the result below to see the details of the person you’re searched for.</p>
+    </section>
+    <section class="search-section">
+        <div class="top-text">
+            <h1>Search Any Email Address</h1>
+            <p><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+        </div>
+        <div class="form-section">
+            <form>
+                <input id="emailInput" type="text" placeholder="email">
+                <input id="searchBtn" type="button" value="go!">
+            </form>
+            <div class="bottom-text">
+                <img class="icon" src="/src/images/icons/icon_lock.png" alt="lock">
+                <p>Enter Any Email Address. They won't be notified</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 /* Navbar */
 header {
     background-color: #004A80;
+    padding: 20px 15px 20px 15px;
 }
 
 header nav {
@@ -29,7 +30,7 @@ header nav .header-icon.first {
 }
 
 /* Top section */
-.top-section {
+.search-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,48 +39,48 @@ header nav .header-icon.first {
 }
 
 /* Top section title and paragraph */
-.top-section .top-text {
+.search-section .top-text {
     text-align: center;
     letter-spacing: 0;
 }
 
-.top-section .top-text h1, .top-section .top-text span {
+.search-section .top-text h1, .search-section .top-text span {
     font-weight: bold;
 }
 
 /* Top section input and button */
 
-.top-section .form-section form {
+.search-section .form-section form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.top-section .form-section input {
+.search-section .form-section input {
     border: none;
     border-radius: 3px;
     text-indent: 12px;
 }
 
-.top-section .form-section input,
-.top-section .form-section input[type=text]::placeholder {
+.search-section .form-section input,
+.search-section .form-section input[type=text]::placeholder {
     font-weight: bold;
     font-size: 16px;
     color: #9B9B9B;
     line-height: 18px;
 }
 
-.top-section .form-section input[type=text]::placeholder {
+.search-section .form-section input[type=text]::placeholder {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.top-section .form-section input[type=text] {
+.search-section .form-section input[type=text] {
     box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
     padding: 0px;
 }
 
-.top-section .form-section input[type=button] {
+.search-section .form-section input[type=button] {
     /* font style */
     font-weight: bold;
     color: #004A80;
@@ -91,19 +92,19 @@ header nav .header-icon.first {
 }
 
 /* Bottom paragraph */
-.top-section .bottom-text {
+.search-section .bottom-text {
     width: 100%;
     display: flex;
     margin-top: 20px;
     text-align: left;
 }
 
-.top-section .bottom-text .icon {
+.search-section .bottom-text .icon {
     width: 15px;
     height: 19px;
 }
 
-.top-section .bottom-text p {
+.search-section .bottom-text p {
     font-size: 16px;
     color: #F6BC25;
     letter-spacing: 0;
@@ -164,37 +165,33 @@ header nav .header-icon.first {
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 767px) {
-    header {
-        padding: 20px 15px 0px 15px;
-    }
-
     /* Top section title and paragraph */
-    .top-section {
-        padding: 30px 15px 40px 25px;
+    .search-section {
+        padding: 30px 15px 20px 25px;
     }
 
-    .top-section .top-text h1 {
+    .search-section .top-text h1 {
         font-size: 38px;
     }
 
-    .top-section .top-text p {
+    .search-section .top-text p {
         margin-top: 10px;
         line-height: 23px;
     }
 
     /* Top section input and button */
-    .top-section .form-section form {
+    .search-section .form-section form {
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
 
-    .top-section .form-section input {
+    .search-section .form-section input {
         width: 100%;
         height: 50px;
     }
 
-    .top-section .form-section input[type=button] {
+    .search-section .form-section input[type=button] {
         margin-top: 10px;
         /* font style */
         font-family: lato;
@@ -203,7 +200,7 @@ header nav .header-icon.first {
     }
 
     /* Bottom paragraph */
-    .top-section .bottom-text .icon {
+    .search-section .bottom-text .icon {
         margin-right: 10px;
     }
 
@@ -249,7 +246,7 @@ header nav .header-icon.first {
     }
 }
 
-/* Mobile landscape */
+/* Mobile landscape only */
 @media (min-width: 481px) and (max-width: 767px) {
 
     /* Main content */
@@ -266,27 +263,27 @@ header nav .header-icon.first {
 @media (min-width: 768px) {
 
     /* Top section title and paragraph */
-    .top-section .top-text p {
+    .search-section .top-text p {
         margin-top: 15px;
     }
 
     /* Top section input and button */
-    .top-section .form-section input {
+    .search-section .form-section input {
         height: 70px;
     }
 
-    .top-section .form-section input[type=text] {
+    .search-section .form-section input[type=text] {
         margin-right: 20px;
     }
 
-    .top-section .form-section input[type=button] {
+    .search-section .form-section input[type=button] {
         width: 180px;
         font-size: 24px;
         letter-spacing: 1px;
     }
 
     /* Bottom paragraph */
-    .top-section .bottom-text .icon {
+    .search-section .bottom-text .icon {
         margin-right: 15px;
     }
 
@@ -313,31 +310,27 @@ header nav .header-icon.first {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    header {
-        padding: 20px 15px 0px 15px;
-    }
-
     /* Top section title and paragraph */
-    .top-section {
-        padding: 50px 25px 60px 25px;
+    .search-section {
+        padding: 50px 25px 40px 25px;
     }
 
-    .top-section .top-text h1 {
+    .search-section .top-text h1 {
         font-size: 48px;
     }
 
-    .top-section .top-text p {
+    .search-section .top-text p {
         line-height: 25px;
         font-size: 20px;
     }
 
     /* Top section input and button */
-    .top-section .form-section form {
+    .search-section .form-section form {
         margin-top: 28px;
         flex-direction: row;
     }
 
-    .top-section .form-section input[type=text] {
+    .search-section .form-section input[type=text] {
         width: 518px;
     }
 
@@ -390,31 +383,27 @@ header nav .header-icon.first {
 
 /* Desktop */
 @media (min-width: 1025px) {
-    header {
-        padding: 20px 230px 0px 230px;
-    }
-
     /* Top section title and paragraph */
-    .top-section {
-        padding: 50px 230px 95px 230px;
+    .search-section {
+        padding: 50px 230px 75px 230px;
     }
 
-    .top-section .top-text h1 {
+    .search-section .top-text h1 {
         font-size: 52px;
     }
 
-    .top-section .top-text p {
+    .search-section .top-text p {
         line-height: 29px;
         font-size: 24px;
     }
 
     /* Top section input and button */
-    .top-section .form-section form {
+    .search-section .form-section form {
         margin-top: 29px;
         flex-direction: row;
     }
 
-    .top-section .form-section input[type=text] {
+    .search-section .form-section input[type=text] {
         width: 780px;
     }
 
