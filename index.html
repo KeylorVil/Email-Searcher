@@ -31,11 +31,15 @@
             <h1>Search Any Email Address</h1>
             <p><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
         </div>
-        <div class="form-section">
-            <form>
-                <input id="emailInput" type="text" placeholder="email">
+        <div class="input-section">
+            <div>
+                <div class="input-div">
+                    <input id="emailInput" class="input-text" type="text" placeholder="email">
+                    <label id="labelInput" for="emailInput" class="input-label">email</label>
+                    <label id="errorLabel" for="emailInput">Please add a valid email address</label>
+                </div>
                 <input id="searchBtn" type="button" value="go!">
-            </form>
+            </div>
             <div class="bottom-text">
                 <img class="icon" src="/src/images/icons/icon_lock.png" alt="lock">
                 <p>Enter Any Email Address. They won't be notified</p>
