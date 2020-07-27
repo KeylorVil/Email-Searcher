@@ -194,6 +194,29 @@ header nav .header-icon.first {
     margin-top: 8px;
 }
 
+
+/* Footer */
+
+footer {
+    background-color: #ffffff;
+    display: flex;
+}
+
+footer>p {
+    font-size: 15px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+footer>span {
+    font-size: 14px;
+    color: #004A80;
+    letter-spacing: 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 /* Input float label */
 .input-div {
     position: relative;
@@ -309,6 +332,21 @@ header nav .header-icon.first {
         font-size: 16px;
     }
 
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 15px 25px 15px;
+    }
+
+    footer>p {
+        max-width: 290px;
+    }
+
+    footer>span {
+        margin-top: 20px;
+    }
+
     /* Input float label */
     .input-text:not(:placeholder-shown)+.input-label,
     .input-text:focus:not(:placeholder-shown)+.input-label {
@@ -377,6 +415,14 @@ header nav .header-icon.first {
 
     .main .cards .col .card .number {
         margin-right: 20px;
+    }
+
+    /* Footer */
+    /* Footer */
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -451,6 +497,16 @@ header nav .header-icon.first {
     .main .cards .col .card .right-text p {
         max-width: 264px;
         font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 14px 25px 14px 25px;
+    }
+
+    footer>p {
+        max-width: 575px;
+        margin-right: 40px;
     }
 }
 
@@ -530,5 +586,15 @@ header nav .header-icon.first {
     .main .cards .col .card .right-text p {
         max-width: 380px;
         font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 14px 121px 14px 130px;
+    }
+
+    footer>p {
+        max-width: 960px;
+        margin-right: 40px;
     }
 }
