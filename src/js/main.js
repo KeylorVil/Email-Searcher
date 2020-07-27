@@ -10,12 +10,12 @@ domReady(function() {
     //     '/src/css/style.css',
     // ];
     const stylesheets = [
-        '/src/css/reset.min.css',
-        '/src/css/main.min.css',
-        '/src/css/style.css',
+        '/src/css/reset.min.css?v1.0',
+        '/src/css/main.min.css?v1.0',
+        '/src/css/style.min.css?v1.0',
     ];
     const scripts = [
-        '/src/js/script.js',
+        '/src/js/script.min.js?v1.0',
     ];
     stylesheets.forEach(function(src) {
         let asset = document.createElement('link');

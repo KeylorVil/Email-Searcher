@@ -4,11 +4,10 @@ domReady(function () {
     //     '/src/css/result.css',
     // ];
     const stylesheets = [
-        '/src/css/result.css',
+        '/src/css/result.min.css?v1.0',
     ];
     const scripts = [
-        '/src/js/script.js',
-        '/src/js/search_email.js',
+        '/src/js/search_email.min.js?v1.0',
     ];
     stylesheets.forEach(function (src) {
         let asset = document.createElement('link');

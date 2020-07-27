@@ -92,6 +92,10 @@
         margin-top: 0px;
     }
 
+    /* Loader */
+    .loader {
+        margin: 0 auto;
+    }
 }
 
 /* Mobile */
