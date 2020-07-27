@@ -11,6 +11,7 @@ socket.on('connect', function () {
         });
     } else {
         emailError();
+        document.querySelector('#loader').style.display = "none";
     }
 });
 
@@ -22,6 +23,7 @@ function emailError() {
 socket.on('response', function (response) {
     let data = JSON.parse(response)
     if (data.length !== 0) {
+        document.querySelector('#loader').style.display = "none";
         // Create Elements
         let resultDiv = document.createElement('div');
         let iconDiv = document.createElement('div');
@@ -44,6 +46,7 @@ socket.on('response', function (response) {
         document.querySelector('.main').appendChild(resultDiv);
     } else {
         emailError();
+        document.querySelector('#loader').style.display = "none";
     }
     socket.close()
 });

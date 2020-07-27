@@ -53,6 +53,26 @@
     margin-top: 5px;
 }
 
+/* Loader */
+.loader {
+    border: 16px solid #f6bc25;
+    border-top: 16px solid #f3f3f3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Mobile & Tablet shared */
 @media (min-width: 320px) and (max-width: 1024px) {
     .main .result .info p {
@@ -71,7 +91,7 @@
     .main .result .info .row .col p.last_relative {
         margin-top: 0px;
     }
-    
+
 }
 
 /* Mobile */

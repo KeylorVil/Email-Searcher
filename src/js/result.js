@@ -4,7 +4,7 @@ domReady(function () {
     //     '/src/css/result.css',
     // ];
     const stylesheets = [
-        '/src/css/result.min.css',
+        '/src/css/result.css',
     ];
     const scripts = [
         '/src/js/script.js',
