@@ -50,19 +50,19 @@ header nav .header-icon.first {
 }
 
 /* Top section input and button */
-.search-section .input-section>div {
+.search-section .input-section>.form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.search-section .input-section>div input {
+.search-section .input-section>.form input {
     border: none;
     border-radius: 3px;
     text-indent: 12px;
 }
 
-.search-section .input-section>div input[type=text]::placeholder {
+.search-section .input-section>.form input[type=text]::placeholder {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -71,22 +71,22 @@ header nav .header-icon.first {
     line-height: 18px;
 }
 
-.search-section .input-section>div input[type=text] {
+.search-section .input-section>.form input[type=text] {
     font-size: 22px;
     color: #000000;
     box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
     padding: 0px;
 }
 
-.search-section .input-section>div input[type=text]:focus {
+.search-section .input-section>.form input[type=text]:focus {
     box-shadow: 0 0 0 2px #F6BC25;
 }
 
-.search-section .input-section>div input[type=text].error {
+.search-section .input-section>.form input[type=text].error {
     box-shadow: 0 0 0 2px #DC0015;
 }
 
-.search-section .input-section>div input[type=button] {
+.search-section .input-section>.form input[type=button] {
     /* font style */
     font-weight: bold;
     color: #004A80;
@@ -98,12 +98,12 @@ header nav .header-icon.first {
     cursor: pointer;
 }
 
-.search-section .input-section>div input[type=button]:hover {
+.search-section .input-section>.form input[type=button]:hover {
     background-image: none;
     background-color: #F2DA56;
 }
 
-.search-section .input-section>div input[type=button]:active {
+.search-section .input-section>.form input[type=button]:active {
     background-image: none;
     background-color: #F6BC25;
 }
@@ -244,18 +244,18 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .search-section .input-section>div {
+    .search-section .input-section>.form {
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
 
-    .search-section .input-section>div input {
+    .search-section .input-section>.form input {
         width: 100%;
         height: 50px;
     }
 
-    .search-section .input-section>div input[type=button] {
+    .search-section .input-section>.form input[type=button] {
         margin-top: 10px;
         /* font style */
         font-family: lato;
@@ -340,15 +340,15 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .search-section .input-section>div input {
+    .search-section .input-section>.form input {
         height: 70px;
     }
 
-    .search-section .input-section>div input[type=text] {
+    .search-section .input-section>.form input[type=text] {
         margin-right: 20px;
     }
 
-    .search-section .input-section>div input[type=button] {
+    .search-section .input-section>.form input[type=button] {
         width: 180px;
         font-size: 24px;
         letter-spacing: 1px;
@@ -398,12 +398,12 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .search-section .input-section>div {
+    .search-section .input-section>.form {
         margin-top: 28px;
         flex-direction: row;
     }
 
-    .search-section .input-section>div input[type=text] {
+    .search-section .input-section>.form input[type=text] {
         width: 518px;
     }
 
@@ -477,12 +477,12 @@ header nav .header-icon.first {
     }
 
     /* Top section input and button */
-    .search-section .input-section>div {
+    .search-section .input-section>.form {
         margin-top: 29px;
         flex-direction: row;
     }
 
-    .search-section .input-section>div input[type=text] {
+    .search-section .input-section>.form input[type=text] {
         width: 780px;
     }
 
