@@ -45,6 +45,7 @@ socket.on('response', function (response) {
     } else {
         emailError();
     }
+    socket.close()
 });
 
 function createProfileIcon(iconDiv) {
